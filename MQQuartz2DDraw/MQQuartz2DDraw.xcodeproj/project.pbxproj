@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0905869D1D599C5D008665FD /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905869C1D599C5D008665FD /* UIImage+Extensions.swift */; };
+		0905869F1D59A1B9008665FD /* MQDrawImageUseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905869E1D59A1B8008665FD /* MQDrawImageUseController.swift */; };
+		090586A11D59A1D1008665FD /* MQDrawImageUse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090586A01D59A1D1008665FD /* MQDrawImageUse.storyboard */; };
+		090586A31D59DF5E008665FD /* MQDrawCaputureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090586A21D59DF5E008665FD /* MQDrawCaputureController.swift */; };
+		090586A51D59DF6F008665FD /* MQDrawCaputure.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090586A41D59DF6F008665FD /* MQDrawCaputure.storyboard */; };
+		09265DB71D61E78900BECB95 /* MQDrawingBoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09265DB61D61E78900BECB95 /* MQDrawingBoardController.swift */; };
+		09265DB91D61E7A500BECB95 /* MQDrawingBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09265DB81D61E7A500BECB95 /* MQDrawingBoard.storyboard */; };
+		09265DBB1D61E7C800BECB95 /* MQDrawingBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09265DBA1D61E7C800BECB95 /* MQDrawingBoardView.swift */; };
+		093315411D52D6C400B41231 /* MQDrawCopyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093315401D52D6C400B41231 /* MQDrawCopyImageView.swift */; };
+		093315431D52EE9600B41231 /* MQDrawSnowflakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093315421D52EE9600B41231 /* MQDrawSnowflakeView.swift */; };
+		093315451D54411F00B41231 /* MQStatusStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093315441D54411F00B41231 /* MQStatusStackView.swift */; };
+		093315471D5467F700B41231 /* MQRectUseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093315461D5467F700B41231 /* MQRectUseView.swift */; };
+		0940A0A41D5B18AA006160AC /* MQImageClearController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940A0A31D5B18AA006160AC /* MQImageClearController.swift */; };
+		0940A0A61D5B18BA006160AC /* MQImageClear.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0940A0A51D5B18BA006160AC /* MQImageClear.storyboard */; };
+		0940A0A81D5B2096006160AC /* MQGestureUnlockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940A0A71D5B2096006160AC /* MQGestureUnlockController.swift */; };
+		0940A0AA1D5B20A1006160AC /* MQGestureUnlock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0940A0A91D5B20A1006160AC /* MQGestureUnlock.storyboard */; };
+		0940A0AC1D5B20C5006160AC /* MQLockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940A0AB1D5B20C5006160AC /* MQLockView.swift */; };
+		094181FA1D50320400594D9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094181F91D50320400594D9D /* AppDelegate.swift */; };
+		094181FF1D50320400594D9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094181FD1D50320400594D9D /* Main.storyboard */; };
+		094182011D50320400594D9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 094182001D50320400594D9D /* Assets.xcassets */; };
+		094182041D50320400594D9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094182021D50320400594D9D /* LaunchScreen.storyboard */; };
+		0941820F1D50320400594D9D /* MQQuartz2DDrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941820E1D50320400594D9D /* MQQuartz2DDrawTests.swift */; };
+		0941821A1D50324C00594D9D /* MQDrawController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094182191D50324C00594D9D /* MQDrawController.swift */; };
+		094182201D507F1700594D9D /* MQDrawLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941821F1D507F1700594D9D /* MQDrawLineView.swift */; };
+		094182221D507F2500594D9D /* MQDrawRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094182211D507F2500594D9D /* MQDrawRectView.swift */; };
+		094182241D51925000594D9D /* MQDrawProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094182231D51925000594D9D /* MQDrawProgressController.swift */; };
+		094182261D51926100594D9D /* MQDrawProgress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094182251D51926100594D9D /* MQDrawProgress.storyboard */; };
+		0941822A1D5193BC00594D9D /* MQDrawProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094182291D5193BC00594D9D /* MQDrawProgressView.swift */; };
+		0941822C1D51CB5000594D9D /* MQDrawPieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0941822B1D51CB5000594D9D /* MQDrawPieView.swift */; };
+		094182321D51E41300594D9D /* MQCommonTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094182311D51E41300594D9D /* MQCommonTool.swift */; };
+		094182361D51E82000594D9D /* MQDrawHistogramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094182351D51E82000594D9D /* MQDrawHistogramView.swift */; };
+		094182381D51F09F00594D9D /* MQDrawStringAndImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094182371D51F09F00594D9D /* MQDrawStringAndImageView.swift */; };
+		09AD35D01D66AD0400AD42AD /* MQImgDoBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AD35CF1D66AD0400AD42AD /* MQImgDoBgView.swift */; };
+		09BD68E61D62C0B300497B6D /* MQBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD68E51D62C0B300497B6D /* MQBezierPath.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0941820B1D50320400594D9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 094181EE1D50320400594D9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 094181F51D50320400594D9D;
+			remoteInfo = MQQuartz2DDraw;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0905869C1D599C5D008665FD /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		0905869E1D59A1B8008665FD /* MQDrawImageUseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQDrawImageUseController.swift; sourceTree = "<group>"; };
+		090586A01D59A1D1008665FD /* MQDrawImageUse.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MQDrawImageUse.storyboard; sourceTree = "<group>"; };
+		090586A21D59DF5E008665FD /* MQDrawCaputureController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQDrawCaputureController.swift; sourceTree = "<group>"; };
+		090586A41D59DF6F008665FD /* MQDrawCaputure.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MQDrawCaputure.storyboard; sourceTree = "<group>"; };
+		09265DB61D61E78900BECB95 /* MQDrawingBoardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQDrawingBoardController.swift; sourceTree = "<group>"; };
+		09265DB81D61E7A500BECB95 /* MQDrawingBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MQDrawingBoard.storyboard; sourceTree = "<group>"; };
+		09265DBA1D61E7C800BECB95 /* MQDrawingBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQDrawingBoardView.swift; sourceTree = "<group>"; };
+		093315401D52D6C400B41231 /* MQDrawCopyImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQDrawCopyImageView.swift; sourceTree = "<group>"; };
+		093315421D52EE9600B41231 /* MQDrawSnowflakeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQDrawSnowflakeView.swift; sourceTree = "<group>"; };
+		093315441D54411F00B41231 /* MQStatusStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQStatusStackView.swift; sourceTree = "<group>"; };
+		093315461D5467F700B41231 /* MQRectUseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQRectUseView.swift; sourceTree = "<group>"; };
+		0940A0A31D5B18AA006160AC /* MQImageClearController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQImageClearController.swift; sourceTree = "<group>"; };
+		0940A0A51D5B18BA006160AC /* MQImageClear.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MQImageClear.storyboard; sourceTree = "<group>"; };
+		0940A0A71D5B2096006160AC /* MQGestureUnlockController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQGestureUnlockController.swift; sourceTree = "<group>"; };
+		0940A0A91D5B20A1006160AC /* MQGestureUnlock.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MQGestureUnlock.storyboard; sourceTree = "<group>"; };
+		0940A0AB1D5B20C5006160AC /* MQLockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQLockView.swift; sourceTree = "<group>"; };
+		094181F61D50320400594D9D /* MQQuartz2DDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQQuartz2DDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		094181F91D50320400594D9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		094181FE1D50320400594D9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		094182001D50320400594D9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		094182031D50320400594D9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		094182051D50320400594D9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0941820A1D50320400594D9D /* MQQuartz2DDrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQQuartz2DDrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0941820E1D50320400594D9D /* MQQuartz2DDrawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQQuartz2DDrawTests.swift; sourceTree = "<group>"; };
+		094182101D50320400594D9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		094182191D50324C00594D9D /* MQDrawController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQDrawController.swift; sourceTree = "<group>"; };
+		0941821F1D507F1700594D9D /* MQDrawLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQDrawLineView.swift; sourceTree = "<group>"; };
+		094182211D507F2500594D9D /* MQDrawRectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQDrawRectView.swift; sourceTree = "<group>"; };
+		094182231D51925000594D9D /* MQDrawProgressController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQDrawProgressController.swift; sourceTree = "<group>"; };
+		094182251D51926100594D9D /* MQDrawProgress.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MQDrawProgress.storyboard; sourceTree = "<group>"; };
+		094182291D5193BC00594D9D /* MQDrawProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQDrawProgressView.swift; sourceTree = "<group>"; };
+		0941822B1D51CB5000594D9D /* MQDrawPieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQDrawPieView.swift; sourceTree = "<group>"; };
+		094182311D51E41300594D9D /* MQCommonTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQCommonTool.swift; sourceTree = "<group>"; };
+		094182351D51E82000594D9D /* MQDrawHistogramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQDrawHistogramView.swift; sourceTree = "<group>"; };
+		094182371D51F09F00594D9D /* MQDrawStringAndImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQDrawStringAndImageView.swift; sourceTree = "<group>"; };
+		09AD35CF1D66AD0400AD42AD /* MQImgDoBgView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQImgDoBgView.swift; sourceTree = "<group>"; };
+		09BD68E51D62C0B300497B6D /* MQBezierPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQBezierPath.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		094181F31D50320400594D9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		094182071D50320400594D9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		094181ED1D50320400594D9D = {
+			isa = PBXGroup;
+			children = (
+				094181F81D50320400594D9D /* MQQuartz2DDraw */,
+				0941820D1D50320400594D9D /* MQQuartz2DDrawTests */,
+				094181F71D50320400594D9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		094181F71D50320400594D9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				094181F61D50320400594D9D /* MQQuartz2DDraw.app */,
+				0941820A1D50320400594D9D /* MQQuartz2DDrawTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		094181F81D50320400594D9D /* MQQuartz2DDraw */ = {
+			isa = PBXGroup;
+			children = (
+				094181F91D50320400594D9D /* AppDelegate.swift */,
+				094182311D51E41300594D9D /* MQCommonTool.swift */,
+				0905869C1D599C5D008665FD /* UIImage+Extensions.swift */,
+				094182191D50324C00594D9D /* MQDrawController.swift */,
+				0941821F1D507F1700594D9D /* MQDrawLineView.swift */,
+				094182211D507F2500594D9D /* MQDrawRectView.swift */,
+				0941822B1D51CB5000594D9D /* MQDrawPieView.swift */,
+				094182351D51E82000594D9D /* MQDrawHistogramView.swift */,
+				094182371D51F09F00594D9D /* MQDrawStringAndImageView.swift */,
+				093315401D52D6C400B41231 /* MQDrawCopyImageView.swift */,
+				093315421D52EE9600B41231 /* MQDrawSnowflakeView.swift */,
+				093315441D54411F00B41231 /* MQStatusStackView.swift */,
+				093315461D5467F700B41231 /* MQRectUseView.swift */,
+				094181FD1D50320400594D9D /* Main.storyboard */,
+				094182231D51925000594D9D /* MQDrawProgressController.swift */,
+				094182291D5193BC00594D9D /* MQDrawProgressView.swift */,
+				094182251D51926100594D9D /* MQDrawProgress.storyboard */,
+				0905869E1D59A1B8008665FD /* MQDrawImageUseController.swift */,
+				090586A01D59A1D1008665FD /* MQDrawImageUse.storyboard */,
+				090586A21D59DF5E008665FD /* MQDrawCaputureController.swift */,
+				090586A41D59DF6F008665FD /* MQDrawCaputure.storyboard */,
+				0940A0A31D5B18AA006160AC /* MQImageClearController.swift */,
+				0940A0A51D5B18BA006160AC /* MQImageClear.storyboard */,
+				0940A0A71D5B2096006160AC /* MQGestureUnlockController.swift */,
+				0940A0AB1D5B20C5006160AC /* MQLockView.swift */,
+				0940A0A91D5B20A1006160AC /* MQGestureUnlock.storyboard */,
+				09265DB61D61E78900BECB95 /* MQDrawingBoardController.swift */,
+				09BD68E51D62C0B300497B6D /* MQBezierPath.swift */,
+				09AD35CF1D66AD0400AD42AD /* MQImgDoBgView.swift */,
+				09265DBA1D61E7C800BECB95 /* MQDrawingBoardView.swift */,
+				09265DB81D61E7A500BECB95 /* MQDrawingBoard.storyboard */,
+				094182001D50320400594D9D /* Assets.xcassets */,
+				094182021D50320400594D9D /* LaunchScreen.storyboard */,
+				094182051D50320400594D9D /* Info.plist */,
+			);
+			path = MQQuartz2DDraw;
+			sourceTree = "<group>";
+		};
+		0941820D1D50320400594D9D /* MQQuartz2DDrawTests */ = {
+			isa = PBXGroup;
+			children = (
+				0941820E1D50320400594D9D /* MQQuartz2DDrawTests.swift */,
+				094182101D50320400594D9D /* Info.plist */,
+			);
+			path = MQQuartz2DDrawTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		094181F51D50320400594D9D /* MQQuartz2DDraw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 094182131D50320400594D9D /* Build configuration list for PBXNativeTarget "MQQuartz2DDraw" */;
+			buildPhases = (
+				094181F21D50320400594D9D /* Sources */,
+				094181F31D50320400594D9D /* Frameworks */,
+				094181F41D50320400594D9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MQQuartz2DDraw;
+			productName = MQQuartz2DDraw;
+			productReference = 094181F61D50320400594D9D /* MQQuartz2DDraw.app */;
+			productType = "com.apple.product-type.application";
+		};
+		094182091D50320400594D9D /* MQQuartz2DDrawTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 094182161D50320400594D9D /* Build configuration list for PBXNativeTarget "MQQuartz2DDrawTests" */;
+			buildPhases = (
+				094182061D50320400594D9D /* Sources */,
+				094182071D50320400594D9D /* Frameworks */,
+				094182081D50320400594D9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0941820C1D50320400594D9D /* PBXTargetDependency */,
+			);
+			name = MQQuartz2DDrawTests;
+			productName = MQQuartz2DDrawTests;
+			productReference = 0941820A1D50320400594D9D /* MQQuartz2DDrawTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		094181EE1D50320400594D9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MQ;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = mengQuietly;
+				TargetAttributes = {
+					094181F51D50320400594D9D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					094182091D50320400594D9D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 094181F51D50320400594D9D;
+					};
+				};
+			};
+			buildConfigurationList = 094181F11D50320400594D9D /* Build configuration list for PBXProject "MQQuartz2DDraw" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 094181ED1D50320400594D9D;
+			productRefGroup = 094181F71D50320400594D9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				094181F51D50320400594D9D /* MQQuartz2DDraw */,
+				094182091D50320400594D9D /* MQQuartz2DDrawTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		094181F41D50320400594D9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				094182041D50320400594D9D /* LaunchScreen.storyboard in Resources */,
+				090586A11D59A1D1008665FD /* MQDrawImageUse.storyboard in Resources */,
+				0940A0AA1D5B20A1006160AC /* MQGestureUnlock.storyboard in Resources */,
+				094182261D51926100594D9D /* MQDrawProgress.storyboard in Resources */,
+				090586A51D59DF6F008665FD /* MQDrawCaputure.storyboard in Resources */,
+				094182011D50320400594D9D /* Assets.xcassets in Resources */,
+				094181FF1D50320400594D9D /* Main.storyboard in Resources */,
+				0940A0A61D5B18BA006160AC /* MQImageClear.storyboard in Resources */,
+				09265DB91D61E7A500BECB95 /* MQDrawingBoard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		094182081D50320400594D9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		094181F21D50320400594D9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09265DB71D61E78900BECB95 /* MQDrawingBoardController.swift in Sources */,
+				0905869F1D59A1B9008665FD /* MQDrawImageUseController.swift in Sources */,
+				09BD68E61D62C0B300497B6D /* MQBezierPath.swift in Sources */,
+				0940A0AC1D5B20C5006160AC /* MQLockView.swift in Sources */,
+				094182221D507F2500594D9D /* MQDrawRectView.swift in Sources */,
+				094181FA1D50320400594D9D /* AppDelegate.swift in Sources */,
+				094182321D51E41300594D9D /* MQCommonTool.swift in Sources */,
+				0941821A1D50324C00594D9D /* MQDrawController.swift in Sources */,
+				093315411D52D6C400B41231 /* MQDrawCopyImageView.swift in Sources */,
+				093315431D52EE9600B41231 /* MQDrawSnowflakeView.swift in Sources */,
+				0941822C1D51CB5000594D9D /* MQDrawPieView.swift in Sources */,
+				0941822A1D5193BC00594D9D /* MQDrawProgressView.swift in Sources */,
+				0940A0A41D5B18AA006160AC /* MQImageClearController.swift in Sources */,
+				093315451D54411F00B41231 /* MQStatusStackView.swift in Sources */,
+				094182201D507F1700594D9D /* MQDrawLineView.swift in Sources */,
+				090586A31D59DF5E008665FD /* MQDrawCaputureController.swift in Sources */,
+				09AD35D01D66AD0400AD42AD /* MQImgDoBgView.swift in Sources */,
+				093315471D5467F700B41231 /* MQRectUseView.swift in Sources */,
+				094182241D51925000594D9D /* MQDrawProgressController.swift in Sources */,
+				094182361D51E82000594D9D /* MQDrawHistogramView.swift in Sources */,
+				094182381D51F09F00594D9D /* MQDrawStringAndImageView.swift in Sources */,
+				0905869D1D599C5D008665FD /* UIImage+Extensions.swift in Sources */,
+				09265DBB1D61E7C800BECB95 /* MQDrawingBoardView.swift in Sources */,
+				0940A0A81D5B2096006160AC /* MQGestureUnlockController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		094182061D50320400594D9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0941820F1D50320400594D9D /* MQQuartz2DDrawTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0941820C1D50320400594D9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 094181F51D50320400594D9D /* MQQuartz2DDraw */;
+			targetProxy = 0941820B1D50320400594D9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		094181FD1D50320400594D9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				094181FE1D50320400594D9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		094182021D50320400594D9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				094182031D50320400594D9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		094182111D50320400594D9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		094182121D50320400594D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		094182141D50320400594D9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MQQuartz2DDraw/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mengQuietly.MQQuartz2DDraw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		094182151D50320400594D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MQQuartz2DDraw/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mengQuietly.MQQuartz2DDraw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		094182171D50320400594D9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MQQuartz2DDrawTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mengQuietly.MQQuartz2DDrawTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MQQuartz2DDraw.app/MQQuartz2DDraw";
+			};
+			name = Debug;
+		};
+		094182181D50320400594D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MQQuartz2DDrawTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mengQuietly.MQQuartz2DDrawTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MQQuartz2DDraw.app/MQQuartz2DDraw";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		094181F11D50320400594D9D /* Build configuration list for PBXProject "MQQuartz2DDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				094182111D50320400594D9D /* Debug */,
+				094182121D50320400594D9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		094182131D50320400594D9D /* Build configuration list for PBXNativeTarget "MQQuartz2DDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				094182141D50320400594D9D /* Debug */,
+				094182151D50320400594D9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		094182161D50320400594D9D /* Build configuration list for PBXNativeTarget "MQQuartz2DDrawTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				094182171D50320400594D9D /* Debug */,
+				094182181D50320400594D9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 094181EE1D50320400594D9D /* Project object */;
+}

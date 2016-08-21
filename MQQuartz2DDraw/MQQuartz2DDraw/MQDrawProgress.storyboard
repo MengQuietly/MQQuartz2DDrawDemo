@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X7B-Um-Azz">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Draw Progress Controller-->
+        <scene sceneID="KRD-bv-lUS">
+            <objects>
+                <viewController id="X7B-Um-Azz" customClass="MQDrawProgressController" customModule="MQQuartz2DDraw" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ocw-z7-nwA"/>
+                        <viewControllerLayoutGuide type="bottom" id="A75-dZ-vu5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OJh-pj-WZf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKw-jR-5Tn" customClass="MQDrawProgressView" customModule="MQQuartz2DDraw" customModuleProvider="target">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.83968013743455494" green="0.71502925160631037" blue="0.57303238040837146" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="PqX-YY-pX7"/>
+                                    <constraint firstAttribute="height" constant="100" id="fyS-aR-Ks0"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rnd-8e-gCc">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hxu-mZ-C8q">
+                                <rect key="frame" x="164" y="380" width="273" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Nyk-eA-vZQ"/>
+                                    <constraint firstAttribute="width" constant="269" id="jZG-vL-hbz"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderChange:" destination="X7B-Um-Azz" eventType="valueChanged" id="ZZc-Gp-zTd"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FKw-jR-5Tn" firstAttribute="centerX" secondItem="OJh-pj-WZf" secondAttribute="centerX" id="2mc-Qa-U6P"/>
+                            <constraint firstItem="Rnd-8e-gCc" firstAttribute="width" secondItem="FKw-jR-5Tn" secondAttribute="width" id="7Mo-o6-mCu"/>
+                            <constraint firstItem="Rnd-8e-gCc" firstAttribute="height" secondItem="FKw-jR-5Tn" secondAttribute="height" id="A7z-4w-e4O"/>
+                            <constraint firstItem="Rnd-8e-gCc" firstAttribute="centerX" secondItem="FKw-jR-5Tn" secondAttribute="centerX" id="KGE-3z-GwT"/>
+                            <constraint firstItem="hxu-mZ-C8q" firstAttribute="centerX" secondItem="OJh-pj-WZf" secondAttribute="centerX" id="PBI-hE-4yI"/>
+                            <constraint firstItem="Rnd-8e-gCc" firstAttribute="centerY" secondItem="FKw-jR-5Tn" secondAttribute="centerY" id="QeC-FG-M1e"/>
+                            <constraint firstItem="FKw-jR-5Tn" firstAttribute="centerY" secondItem="OJh-pj-WZf" secondAttribute="centerY" id="bV4-kb-byq"/>
+                            <constraint firstItem="hxu-mZ-C8q" firstAttribute="top" secondItem="FKw-jR-5Tn" secondAttribute="bottom" constant="30" id="kzC-Kz-a6b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressLabel" destination="Rnd-8e-gCc" id="H3h-ZD-IrH"/>
+                        <outlet property="progressView" destination="FKw-jR-5Tn" id="0oL-EQ-czu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q0e-fD-XId" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304" y="356"/>
+        </scene>
+    </scenes>
+</document>

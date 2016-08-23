@@ -16,12 +16,12 @@ class MQDrawLineView: UIView {
     // drawRect 方法：不能手动调用，因为图形上下文我们自己创建不了，只能由系统创建并传递给我们
     override func drawRect(rect: CGRect) {
         // 绘制图形3种方式：
-//        systemUseToDo() // 系统做法
+        systemUseToDo() // 系统做法
 //        quartz2DUseToDo() // 系统简化做法（CoreGraphics）
 //        kitUseToDo() // UIKit 封装做法（贝赛尔）
 
 //         //2条线绘制
-//        twoLine() // 两条线
+        twoLine() // 两条线
         // 曲线绘制
         quadCurVeLine()
     }
@@ -65,9 +65,9 @@ class MQDrawLineView: UIView {
     // MARK: - 两条线
     func twoLine(){
         let ctx = UIGraphicsGetCurrentContext()
-        CGContextMoveToPoint(ctx, 50, 50)
-        CGContextAddLineToPoint(ctx, 100, 100)
-        CGContextAddLineToPoint(ctx, 100, 200) // 默认下条线起点为上条线终点
+        CGContextMoveToPoint(ctx, 100, 200)
+        CGContextAddLineToPoint(ctx, 150, 250)
+        CGContextAddLineToPoint(ctx, 150, 300) // 默认下条线起点为上条线终点
         // 设置绘图状态（一定在渲染之前）
         UIColor.redColor().setStroke() // 实线颜色
         UIColor.blueColor().setFill() // 填充线颜色
@@ -81,8 +81,8 @@ class MQDrawLineView: UIView {
     func quadCurVeLine(){
         // 第一种： CG 绘制
         let ctx = UIGraphicsGetCurrentContext()
-        CGContextMoveToPoint(ctx, 50, 50)
-        CGContextAddQuadCurveToPoint(ctx, 150, 150, 250, 50)
+        CGContextMoveToPoint(ctx, 200, 50)
+        CGContextAddQuadCurveToPoint(ctx, 300, 300, 250, 50)
         CGContextStrokePath(ctx)
         // 第二种：贝赛尔绘制
 //        let path = UIBezierPath()
